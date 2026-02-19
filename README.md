@@ -33,4 +33,4 @@ Sckit-learn: Machine Learning e IA
 
 
 
-Tensorflow e Keras: Deep Lerning
+Tensorflow e Keras: Deep Learning
