@@ -13,7 +13,7 @@ Banco de Dados: SQL
 SGBD: MySQL
 
 
-Contaninerização: Docker
+Contenierização: Docker
 
 
 
