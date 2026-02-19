@@ -1,0 +1,41 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: analise_dados_fazenda
+    volumes:
+      - ./outputs:/app/outputs
+      - ./Estatística descritiva:/app/Estatística descritiva
+      - ./Estatística inferencial:/app/Estatística inferencial
+      - ./Estatística bayesiana:/app/Estatística bayesiana
+      - ./Modelos ML:/app/Modelos ML
+      - ./Modelos IA:/app/Modelos IA
+      - ./Deep Learning:/app/Deep Learning
+      - ./Comparacoes Modelos:/app/Comparacoes Modelos
+      - ./agriculture_dataset.csv:/app/agriculture_dataset.csv
+      - ./.env:/app/.env
+    environment:
+      - TZ=America/Sao_Paulo
+    restart: "no"
+
+  mysql:
+    image: mysql:8.0
+    container_name: analise_fazenda
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASS:-rootpassword}
+      MYSQL_DATABASE: ${DB_NAME:-fazenda_db}
+      MYSQL_USER: ${DB_USER:-fazenda_user}
+      MYSQL_PASSWORD: ${DB_PASS:-fazenda_password}
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      timeout: 20s
+      retries: 10
+
+volumes:
+  mysql_data:

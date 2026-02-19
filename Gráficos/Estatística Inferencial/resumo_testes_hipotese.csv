@@ -1,0 +1,7 @@
+Teste,Variável/Fator,p-valor,Resultado (α=0.05)
+Shapiro-Wilk (normalidade),Todas numéricas,0.03351095521539753,Misto
+t-test (1 amostra),Média vs Mediana,,Não rejeita H₀
+t-test (2 amostras),Drip vs Sprinkler,0.3008477695877052,Não significativo
+ANOVA (Crop_Type),Yield ~ Crop_Type,0.6550812482092108,Não significativo
+ANOVA (Irrigation_Type),Yield ~ Irrigation_Type,0.24510116442178817,Não significativo
+Qui-quadrado,Crop vs Irrig,,Independente
