@@ -1,2 +1,36 @@
-# analise-de-dados-de-uma-fazenda
-Esse projeto é uma análise de dados de uma fazenda, peguei como base o dataset no kaggle, onde analisei,apliquei estatística, criei os modelos de Machine Learning, IA e Deep Learning
+# Sobre o Projeto
+O projeto é uma Análise de dados de um dataset público sobre fazendas e suas produções, incluindo tipo de irrigação, quantidade de hectares, plantações.
+
+
+
+# Tecnologias Usadas
+Programação Procedural: Python
+
+
+Banco de Dados: SQL
+
+
+SGBD: MySQL
+
+
+Contaninerização: Docker
+
+
+
+# Bibliotecas Usadas
+Pandas: Visualização dos Dados
+
+
+
+Matplotlib: Geração de Gráficos
+
+
+Seaborn: Estilização dos Gráficos
+
+
+
+Sckit-learn: Machine Learning e IA
+
+
+
+Tensorflow e Keras: Deep Lerning
